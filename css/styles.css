@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.body {
+  font-family: 'Russo One', sans-serif;
+}
+
+.main {
+  max-width: 845px;
+  margin: auto;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.textarea {
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.keyboard-keys {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  background-color: #ffbf66;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #748b97;
+  color: #fff;
+  cursor: pointer;
+  transition: border-radius 0.3s, opacity 0.3s;
+}
+
+.key.active {
+  opacity: 0.5;
+  border-radius: 15px;
+}
+
+.Backspace,
+.Delete,
+.Tab,
+.CapsLock,
+.ShiftLeft,
+.Space {
+  flex-grow: 1;
+}
+
+.Enter {
+  width: 70px;
+}
+
+.ShiftRight {
+  width: 105px;
+}
